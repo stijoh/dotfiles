@@ -1,5 +1,3 @@
--- My xmonad config based on dt from distrotube.
-
 import Control.Arrow (first)
 import Data.Char (isSpace, toUpper)
 import qualified Data.Map as M
