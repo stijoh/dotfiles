@@ -2,7 +2,7 @@ ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="awesomepanda"
 
-plugins=(git gitfast last-working-dir common-aliases history-substring-search chucknorris)
+plugins=(git gitfast last-working-dir common-aliases history-substring-search chucknorris ssh-agent)
 
 source "${ZSH}/oh-my-zsh.sh"
 unalias rm 
@@ -30,4 +30,8 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
 chuck_cow
+musa
+
+eval "$(starship init zsh)"
