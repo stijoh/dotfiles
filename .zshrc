@@ -1,6 +1,6 @@
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="awesomepanda"
+ZSH_THEME="dracula"
 
 plugins=(git gitfast last-working-dir common-aliases history-substring-search chucknorris ssh-agent)
 
