@@ -41,6 +41,7 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -53,11 +54,13 @@ Plug 'mbbill/undotree'
 Plug 'rodjek/vim-puppet'
 Plug 'w0rp/ale'
 Plug 'preservim/nerdtree'
+Plug 'vim-ruby/vim-ruby'
 
 call plug#end()
 
 colorscheme dracula
 set background=dark
+
 
 if executable('rg')
     let g:rg_derive_root='true'
