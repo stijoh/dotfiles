@@ -19,8 +19,8 @@ set incsearch
 
 let mapleader = " "
 
-vnoremap <C-c> "*y :let @+=@*<CR>
-map <C-v> "+P
+vnoremap <C-y> "*y :let @+=@*<CR>
+map <C-p> "+P
 
 noremap ø l
 noremap l k
@@ -40,6 +40,7 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+nnoremap <leader>fd :Telescope find_files<CR>
 
 
 call plug#begin('~/.vim/plugged')
@@ -48,20 +49,22 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-utils/vim-man'
-Plug 'git@github.com:kien/ctrlp.vim.git'
-Plug 'git@github.com:Valloric/YouCompleteMe.git'
 Plug 'mbbill/undotree'
 Plug 'rodjek/vim-puppet'
 Plug 'w0rp/ale'
 Plug 'preservim/nerdtree'
 Plug 'vim-ruby/vim-ruby'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
 colorscheme dracula
 set background=dark
 
-
+source $HOME/.config/nvim/plug-config/coc.vim
 if executable('rg')
     let g:rg_derive_root='true'
 endif

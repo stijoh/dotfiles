@@ -8,6 +8,7 @@ Config { font    = "xft:Mononoki Nerd Font:weight=bold:pixelsize=11:antialias=tr
                            ]
        , bgColor = "#282c34"
        , fgColor = "#ff6c6b"
+       , alpha = 100
        , position = Top
        , lowerOnStart = True
        , hideOnStart = False
